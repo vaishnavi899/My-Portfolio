@@ -323,3 +323,35 @@ form .btn2{
     margin-top: -40px;
     display: block;
 }
+/* Media Queries */
+@media (max-width: 768px) {
+    .header-text {
+        font-size: 24px;
+    }
+    .header-text h1 {
+        font-size: 40px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+    }
+    .tab-titles {
+        flex-direction: column;
+    }
+    .tab-links {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .serviceslist {
+        grid-template-columns: 1fr;
+    }
+    .worklist {
+        grid-template-columns: 1fr;
+    }
+}
