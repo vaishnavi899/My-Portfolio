@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7d0fadcf19.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <ul id="nav-links">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <script>
+                function toggleMenu() {
+                    const navLinks = document.getElementById('nav-links');
+                    navLinks.classList.toggle('show');
+                }
+            </script>
+            <div class="header-text">
+                <p>WEB DEVELOPER</p>
+                <h1>Hi, I'm <span>Vaishnavi</span></h1>
+            </div>
+        </div>
+    </div>
+    <!---------------about-->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Vaishnavi, a passionate web developer currently in  second year at Jaypee Institute of Information Technology. I love creating dynamic and responsive web experiences, and always eager to learn and innovate in field of web development.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents" id="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li><span>Web Development</span><br>Designing Web interface</li>
+                            <li><span>Software Development</span><br>Designing Softwares</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience" style="display:none;">
+                        <h2>Experience</h2>
+                        <ul>
+                            <li><span>Cice-Collegeclub</span><br>Management Volunteer</li>
+                            <li><span>JIIC-College Club</span><br>Management Volunteer</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education" style="display:none;">
+                        <h2>Education</h2>
+                        <ul>
+                            <li><span>2022-2026</span><br>BTECH CSE From JAYPEE INSTITUTE OF INFORMATION TECHNOLOGY </li>
+                            <li><span>2022</span><br>Cbse-12th</li>
+                            <li><span>2022</span><br>Cbse-10th</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------services------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="serviceslist">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web Design involves creating visually engaging  interfaces for websites, focusing on user experience and accessibility.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>Software  Design</h2>
+                    <p>Software Design encompasses the process of conceptualizing and planning the structure and functionality of software applications. </p>
+                <a href="#">Learn More</a>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+    <!----------portfolio------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/work.jpg">
+                    <div class="layer">
+                        <h3>Flvor Voyage </h3>
+                        <p>Flavor Voyage is your gateway to global cuisine, offering diverse and authentic recipes from around the world. Discover easy-to-follow instructions and culinary tips to elevate your home cooking experience.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music Player System </h3>
+                        <p>Music player system that allows users to play, pause, and manage their music library.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Trip Planner </h3>
+                        <p>Trip planner that helps users organize travel itineraries, manage destinations, and schedule activities. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn" >See more</a>
+        </div>
+    </div>
+<!-----------------contact-->
+<!-----------------contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>singhvaishnavi258@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7740076361</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vaishnavi-9b5a98148/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf"download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+<p>Copywrite Made with <i class="fa-solid fa-heart"></i>by Vaishnavi</p>
+    </div>
+</div>
+
+    <script>
+        function opentab(tabname){
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            for (var i = 0; i < tabcontents.length; i++) {
+                tabcontents[i].style.display = "none";
+            }
+            document.getElementById(tabname).style.display = "block";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyIS2aMhtSy-nVF9YT7RL7OM-m1J7h-nwoSsr6xSlFGbaYBJrp95Vv2ev4C08WAyDcp9Q/exec'
+        const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+      form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function(){
+                msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+});
+
+      </script>
+</body>
+</html>
