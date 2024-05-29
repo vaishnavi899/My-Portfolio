@@ -12,7 +12,10 @@
         <div class="container">
             <nav>
                 <img src="images/logo.png" class="logo">
-                <ul>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <ul id="nav-links">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#About">About</a></li>
                     <li><a href="#services">Services</a></li>
@@ -20,6 +23,12 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <script>
+                function toggleMenu() {
+                    const navLinks = document.getElementById('nav-links');
+                    navLinks.classList.toggle('show');
+                }
+            </script>
             <div class="header-text">
                 <p>WEB DEVELOPER</p>
                 <h1>Hi, I'm <span>Vaishnavi</span></h1>
