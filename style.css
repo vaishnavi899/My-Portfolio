@@ -14,9 +14,12 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image:url(../images/bakcground.jpg);
+    background-image: url(images/bakcground.jpg); /* Corrected path */
     background-position: center;
+    background-size: cover; /* Ensure it covers the entire area */
+    background-repeat: no-repeat; /* Ensure it does not repeat */
 }
+
 .container{
     padding: 10px 10%;
 }
@@ -98,27 +101,29 @@ nav ul li a:hover::after{
     display: flex;
     margin: 20px 0 40px;
 }
-.tab-links{
+.tab-links {
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
-
 }
-.tab-links::after{
-    content:'';
+
+.tab-links::after {
+    content: '';
     width: 0;
     height: 3px;
-    background: #ff004f ;
+    background: #ff004f;
     position: absolute;
-left: 0;
-bottom :-8px;
-transition: 0.5s;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
 }
-.tab-links.active-link::after{
-    width: 50%;
+
+.tab-links.active-link::after {
+    width: 100%; /* Change to 100% to cover the entire width */
 }
+
 .tabcontents ul li{
     list-style: none;
     margin: 10px 0;  
@@ -323,6 +328,8 @@ form .btn2{
     margin-top: -40px;
     display: block;
 }
+/* Existing styles... */
+
 /* Media Queries */
 @media (max-width: 768px) {
     .header-text {
@@ -334,9 +341,21 @@ form .btn2{
     nav ul {
         flex-direction: column;
         align-items: center;
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul.show {
+        display: flex;
     }
     nav ul li {
         margin: 10px 0;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        color: #fff;
+        font-size: 24px;
     }
     .about-col-1, .about-col-2 {
         flex-basis: 100%;
@@ -353,5 +372,28 @@ form .btn2{
     }
     .worklist {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Additional styles */
+.menu-icon {
+    display: none;
+}
+nav ul {
+    display: flex;
+}
+
+/* Show the menu icon for small screens */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    nav ul.show {
+        display: flex;
     }
 }
