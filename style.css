@@ -99,16 +99,24 @@ nav ul li a:hover::after{
 }
 .tab-titles{
     display: flex;
+    gap: 10px;
     margin: 20px 0 40px;
 }
 .tab-links {
+    background-color: #ff004f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
 }
-
+.tab-links:hover {
+    background-color: #28051e;
+}
 .tab-links::after {
     content: '';
     width: 0;
