@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/7d0fadcf19.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+   
     <div id="header">
         <div class="container">
             <nav>
@@ -24,6 +24,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            
             <script>
                 function toggleMenu() {
                     const navLinks = document.getElementById('nav-links');
@@ -31,8 +32,10 @@
                 }
             </script>
             <div class="header-text">
-                <p>WEB DEVELOPER</p>
                 <h1>Hi, I'm <span>Vaishnavi</span></h1>
+            </div>
+            <div class="text-box">
+                <h2>I'm a <span class="auto-input"></span></h2>
             </div>
         </div>
     </div>
@@ -191,6 +194,16 @@
         .catch(error => console.error('Error!', error.message));
 });
 
+      </script>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+        var Typed = new Typed(".auto-input",{
+            strings: ["Web Devloper","Coder"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop:true
+
+        })
       </script>
 </body>
 </html>
